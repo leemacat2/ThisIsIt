@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Login</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/ThisIsIt.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.1.css" />
+<script type= text/javascript> 
+$(document).ready(function()
+{
+	$("#submit").click(function()
+	{
+		$.ajax({url: "auth.php", success:function(result){$("div").html(result);}});
+	});
+});
+</script>
+
+	
+	</head> 
+
+<body> 
+	<div data-role="page">
+
+		<div data-role="header" font-size="32px">
+			<p align="center"><b>MADAPP LOGIN</b></p>
+		</div>
+
+		<div data-role="content" data-theme="a">
+			<table width="20%" height="30%" align="center" >
+				<form action="home.html" method="post"  valign="20%">
+	
+					<tr>
+						<td><b>Email</b></td> <td>:</td> <td><input type="text" name="email" value="username"></td>
+					</tr>
+					<tr>
+						<td><b>Password</b></td> <td>:</td> <td><input type="password" name="pwd" value="*******"></td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td>Remember&nbspMe</td><td> <input type="checkbox" name="rem" value="1"></td>
+					</tr>
+					<tr>
+						<td><a href="home.html" >Forgot&nbspPassword?</a></td>
+					</tr>
+					<tr>
+						<td><input type="submit" id="submit" value="Login"></td>
+					</tr>
+	
+</form>
+</table>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>

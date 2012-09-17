@@ -1,0 +1,115 @@
+<html>
+<title>
+Profile
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" type="text/css" href="css/ThisIsIt.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+
+
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.1.min.css" />
+
+
+<body>
+
+<div data-role="page" data-add-back-btn="true">
+
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+
+<a href="" data-icon="home"   data-iconpos="notext" class="ui-btn-left"/>Home</a>
+<h1>MADApp</h1>
+<a href=""/ data-iconpos="notext" data-icon="power">  </a>
+
+
+
+
+</div><!--header-->
+
+
+
+<div data-role="content"  data-theme="a">
+
+<br>
+<br>
+
+<img src="images/Logo.jpg" alt="name" align="right" height="20%" width="10%" border="2px">
+
+<table align="center">
+<form name="profile" method="post" action="">
+
+
+<tr>
+	<td>Name</td>
+	<td><input type="text" name="name"></td>
+</tr>
+<tr>
+	<td>Sex</td>
+	<td>
+          <fieldset data-role="controlgroup">
+         <input type="radio" name="gender" id="r1" value="male">
+         <label for="r1">Male</label><br>
+         <input type="radio" name="gender" id="r2" value="female">
+         <label for="r2">Female</label>
+     </fieldset>
+    
+	</td>
+</tr>
+<tr>
+	<td>Address</td>
+	<td>
+        <textarea>
+Type your Address
+        </textarea>
+	</td>
+</tr>
+<tr>
+	<td>Contact No</td>
+	<td><input type="text" name="phno"></td>
+</tr>
+<tr>
+	<td>Email-id</td>
+	<td><input type="text" name="email"></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="text" name="pswd1"></td>
+</tr>
+<tr>
+	<td>Confirm Password</td>
+	<td><input type="text" name="pswd2"></td>
+</tr>
+<tr>
+	<td>Photo</td>
+	<td><input type="file" name="photo"></td>
+</tr>
+<tr>
+	<td colspan=2><input type="submit" value="Submit" ></td>
+
+</tr>
+
+</form>
+
+</table>
+
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true" data-id="foo">
+	<div data-role="navbar"  >
+		<ul>
+			<li><a href="a.html" data-icon="back">Previous</a></li>
+			<li><a href="b.html" data-icon="star">Updates</a></li>
+			<li><a href="c.html" data-icon="info">Profile</a></li>
+		
+		</ul>
+	</div><!-- /navbar -->
+
+</div>
+
+</div>
+
+</body>
+
+
+</html>
